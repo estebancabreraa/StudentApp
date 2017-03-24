@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" type="text/css" href="lib/jquery.mobile-1.4.5.min.css"/> 
+        <script src="lib/jquery-1.11.3.min.js"></script>
+        <script src="lib/jquery.mobile-1.4.5.min.js"></script>
+        <title>StudentApp</title>
+    </head>
+    <body>
+        <div id="page-home" data-role="page">
+            <div id="hdr" data-role="header">
+                <h1 id="titulo">StudentApp</h1> 
+            </div>
+            <div id="contenido" data-role="content">
+                <div id="formulario">
+                    Usuario: <br>
+                    <input id="usuario"/>
+                    Contrase&ntilde;a: <br>
+                    <input id="contrasena"/><br>
+                    <input type="button" id="bIngresar" value="Ingresar">
+                </div>
+            </div>
+        </div>
+        <div id="menu" data-role="page">
+            <div id="hdr" data-role="header">
+                <h1 id="titulo">Menu principal</h1> 
+            </div>
+            <div id="contenido" data-role="content">
+                <center><h4>Bienvenido a StudentApp!</h4></center>
+                <div id="botonesMenu">
+                    <input type="button" id="agregar" value="Agregar una nueva tarea"/>
+                    <input type="button" id="pHacer" value="Cosas por hacer"/>
+                    <input type="button" id="calendario" value="Calendario"/>
+                    <input type="button" id="frases" value="Frases motivacionales">
+                </div>
+            </div>
+        </div>
+        <div id="vAgregar" data-role="page">
+            <div id="hdr" data-role="header">
+                <h1 id="titulo">Agregar nueva tarea</h1> 
+            </div>
+            <div id="contenido" data-role="content">
+                <h3>Titulo</h3><br>
+                <input id="titulo" value=""/>
+                <h3>Fecha</h3>
+                <input type="date" id="fecha" />
+                <h3>Descripcion</h3><br>
+                <textarea id="descripcion"></textarea>
+            </div>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>
